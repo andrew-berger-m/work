@@ -5,12 +5,11 @@ It will depend on following factors:
 - C/C++ Compiler
 - Usage in your code
 - Other factors and hardware problems
-- Processor Architecture
 
 ## Processor Architecture
 Processor architecture means for me processors have different instruction sets for now. We have two architecture families: CISC and RISC processors. Some chips does not need to have instructions for addition or incrementation. Generally, additional instructions are slower than incremental, if both are supported, but this is very poor answer.
 
-CISC architectures have more complex instructions to ìbuildî more steps together in algorithms. So, incrementation or addition can be only (and usually is) part of another instruction which is doing more complex operation in algorithm.
+CISC architectures have more complex instructions to ‚Äúbuild‚Äù more steps together in algorithms. So, incrementation or addition can be only (and usually is) part of another instruction which is doing more complex operation in algorithm.
 
 Next problem is some instructions are also modifying flag registers or other registers in processor. Sometimes, it is needed to bake up or clean up the flag register or another registers in your algorithms. You need to count also time of cleaning up after your instructions.
 
